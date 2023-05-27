@@ -1,7 +1,14 @@
 # TeamChats
 
-> Chat interfaces for teams
+> Chats made easy
 
+- [TeamChats](#teamchats)
+  - [Development](#development)
+  - [Production](#production)
+  - [Learn more](#learn-more)
+
+
+## Development
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
@@ -9,6 +16,8 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+
+## Production
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more

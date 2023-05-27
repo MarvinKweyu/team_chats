@@ -28,6 +28,20 @@ defmodule TeamChatsWeb.Router do
 
     live "/rooms/:id", RoomLive.Show, :show
     live "/rooms/:id/show/edit", RoomLive.Show, :edit
+
+    live "/participants", ParticipantLive.Index, :index
+    live "/participants/new", ParticipantLive.Index, :new
+    live "/participants/:id/edit", ParticipantLive.Index, :edit
+
+    live "/participants/:id", ParticipantLive.Show, :show
+    live "/participants/:id/show/edit", ParticipantLive.Show, :edit
+
+    live "/messages", MessageLive.Index, :index
+    live "/messages/new", MessageLive.Index, :new
+    live "/messages/:id/edit", MessageLive.Index, :edit
+
+    live "/messages/:id", MessageLive.Show, :show
+    live "/messages/:id/show/edit", MessageLive.Show, :edit
   end
 
   # Other scopes may use custom stacks.
