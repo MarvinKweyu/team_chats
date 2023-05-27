@@ -103,8 +103,9 @@
           </div>
           <div class="ml-4 text-xs">
             <h2 class="font-bold">John Doe</h2>
-            <p class="text-gray-500 truncate">
-              Lorem g elit.
+            <p class="text-gray-500 truncate w-48">
+              
+              lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam autem laboriosam quo delectus blanditiis consectetur at quibusdam ut?
             </p>
           </div>
         </div>
@@ -112,26 +113,28 @@
     </div>
   </div>
 
-  <div class="w-4/5">
+  <div class="flex flex-col min-h-screen w-4/5">
     <div>
       <div :for={_item <- [1, 2, 3, 4, 5]} class="flex items-center my-4 px-4 cursor-pointer">
         <div class="rounded-full overflow-hidden w-10 h-10 mt-1">
           <img src="https://picsum.photos/200" alt="Profile Image" />
         </div>
-        <div class="ml-4 text-xs">
+        <div class="pl-4 text-xs">
           <h2 class="font-bold">John Doe <span class="text-gray-400 text-xs">. 12.09am</span></h2>
-          <p class="text-gray-500 truncate w-28">
+          <div class="w-40 md:w-10/12">
+          <p class="text-gray-500 whitespace-normal break-words ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam autem laboriosam quo delectus blanditiis consectetur at quibusdam ut? Perspiciatis exercitationem quibusdam obcaecati voluptate quas repellendus aliquid quasi deserunt voluptatem tempora.
           </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="flex items-center w-full px-6 bottom-0 sticky">
+    <div class="fixed  items-center w-8/12 px-4 bottom-4">
       <form>
         <label class="relative block">
           <input
-            class="w-full text-sm bg-white placeholder:font-italitc border border-slate-400 drop-shadow-md rounded-md py-2 pl-3 pr-10 focus:outline-none"
+            class="w-full text-xs bg-white placeholder:font-italitc border border-slate-400 drop-shadow-md rounded-md py-2 pl-3 pr-10 focus:outline-none"
             placeholder="Enter your message..."
             type="text"
           />
@@ -143,7 +146,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              class="w-6 h-6 cursor-pointer"
             >
               <path
                 stroke-linecap="round"
