@@ -69,7 +69,10 @@ defmodule TeamChatsWeb.ParticipantLiveTest do
     test "deletes participant in listing", %{conn: conn, participant: participant} do
       {:ok, index_live, _html} = live(conn, ~p"/participants")
 
-      assert index_live |> element("#participants-#{participant.id} a", "Delete") |> render_click()
+      assert index_live
+             |> element("#participants-#{participant.id} a", "Delete")
+             |> render_click()
+
       refute has_element?(index_live, "#participants-#{participant.id}")
     end
   end

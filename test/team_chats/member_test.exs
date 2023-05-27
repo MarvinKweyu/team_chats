@@ -35,7 +35,9 @@ defmodule TeamChats.MemberTest do
       participant = participant_fixture()
       update_attrs = %{joined_at: ~U[2023-05-27 17:42:00Z]}
 
-      assert {:ok, %Participant{} = participant} = Member.update_participant(participant, update_attrs)
+      assert {:ok, %Participant{} = participant} =
+               Member.update_participant(participant, update_attrs)
+
       assert participant.joined_at == ~U[2023-05-27 17:42:00Z]
     end
 
